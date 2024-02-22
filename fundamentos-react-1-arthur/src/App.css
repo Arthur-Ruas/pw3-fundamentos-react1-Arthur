@@ -1,31 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  border: none;
 }
 
 .App {
-  text-align: center;
-}
-
-.card-book{
-  background-color: #ddd;
-  width: max(400px);
-  padding: 2rem 1rem;
-}
-
-.card-book__title{
-  font-size: 1.5rem;
-}
-
-.card-book__author{
-  font-size: 1.2rem;
-}
-
-.card-book__image{
-  width: 300px;
-}
-
-.card-book__description{
-  font-size: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
 }

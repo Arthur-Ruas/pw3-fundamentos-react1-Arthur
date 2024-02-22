@@ -1,0 +1,27 @@
+.card-book{
+    background-color: #ddd;
+    width: max(400px);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: .3rem;
+}
+
+.card-book__title{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.card-book__author{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.card-book__image{
+    width: 300px;
+}
+
+.card-book__description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+  
