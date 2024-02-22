@@ -1,9 +1,21 @@
 .card-book{
-    background-color: #ddd;
-    width: max(400px);
-    text-align: center;
+    background-color: #efefef;
+    
+    display: flex;
     padding: 2rem 1rem;
     border-radius: .3rem;
+}
+
+.card-book__esquerdo{
+
+}
+
+.card-book__image{
+    width: 300px;
+}
+
+.card-book__direito__header{
+    border-bottom: 1px solid #000;
 }
 
 .card-book__title{
@@ -16,8 +28,10 @@
     font-weight: 300;
 }
 
-.card-book__image{
-    width: 300px;
+.card-book__author > span{
+    color: #00beef;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .card-book__description{
