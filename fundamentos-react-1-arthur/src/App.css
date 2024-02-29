@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-*{
+*,
+::before,
+::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +19,7 @@ button{
 
 .App {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 2rem;
