@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --color-branco: #fff;
+  --color-cinza-light: #eee;
+  --color-cinza-dark: #aaa;
+  --color-bg: #638fb7;
+  --color-btn: #ed5684;
+}
+
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: .3s;
+}
+
+button{
+  border: none;
+}
+
+.App {
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form{
+  background-color: var(--color-branco);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 2.5rem 4rem;
+  border-radius: 6px;
+}
+
+.form__title{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.wrapper-input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__input{
+  position: relative;
+  width: 100%;
+}
+
+.form__input > input{
+  background-color: var(--color-branco);
+  width: 100%;
+  padding: .6rem .5rem;
+  border: 1px solid var(--color-cinza-dark);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form__button-submit{
+  background-color: var(--color-btn);
+  color: var(--color-branco);
+  width: 100%;
+  padding: .8rem 1.5rem;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form__button-submit:hover{
+  scale: 1.02;
+}
+
+.form__button-submit:active{
+  scale: .99;
+}
