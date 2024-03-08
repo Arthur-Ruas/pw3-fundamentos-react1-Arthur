@@ -1,0 +1,36 @@
+.form-user{
+    background-color: var(--color-bg);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -2px var(--color-shadow);
+}
+
+.form-user > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form__button{
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
