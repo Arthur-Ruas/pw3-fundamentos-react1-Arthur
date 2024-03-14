@@ -1,7 +1,7 @@
 import './App.css';
-import CreateUser from './components/CreateUser/CreateUser';
 
-import UsersCard from './components/UserCards/UsersCard';
+import CreateUser from './components/CreateUser/CreateUser';
+import UsersCard from './components/Users/Users';
 
 function App() {
 

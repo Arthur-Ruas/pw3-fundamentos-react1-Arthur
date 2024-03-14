@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './usersCard.css'
+import './users.css'
 
 import axios from 'axios';
 
-const UserCard = () => {
+const Users = () => {
 
     const [users, setUsers] = useState([])
 
@@ -23,7 +23,7 @@ const UserCard = () => {
         <div className='wrapper-users'>
             {
                 users.map(user =>(
-                    <div className='card-user'>
+                    <div key={user.id} className='card-user'>
                         <img className='card-user__image' src={user.avatar} alt='Avatar do usuário'/>
                         <h1 className='card-user__name'>{user.fist_name}</h1>
                         <p className='card-user__email'>{user.email}</p>
@@ -34,4 +34,4 @@ const UserCard = () => {
     );
 }
 
-export default UserCard;
+export default Users;

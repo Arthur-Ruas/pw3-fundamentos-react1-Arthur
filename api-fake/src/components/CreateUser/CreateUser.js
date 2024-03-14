@@ -5,20 +5,19 @@ import axios from 'axios';
 
 const CreateUser = () => {
 
-    const [name, setName] = useState('');
-    const [job, setJob] = useState('');
+    const [name, setName] = useState("");
+    const [job, setJob] = useState("");
 
-    function createUser(){
+    function createUser(event){
+        event.preventDefault()
         let user = JSON.stringify({name: name, job: job});
 
-        axios.post('https://reqres.in/api/users/' + user)
+        axios.post('https://reqres.in/api/users/', user)
         .then((response) => {
-            console.log(response);
-            alert(response)
+            console.log(response);            
         })
         .catch((error) => {
-            console.log(error)
-            alert(error)
+            console.log(error);            
         });
     }
 
@@ -33,10 +32,10 @@ const CreateUser = () => {
                     </div>
                     <div className='form__input'>
                         <label className='form__input__label'>Digite sua Profissão</label>
-                        <input type='text' value={job} onChange={(event) => {setJob(event.target.value)}}/>
+                        <input type='text' value={job}  onChange={(event) => {setJob(event.target.value)}}/>
                     </div>
                 </div>
-                <button className='form__button' type='submit'>Cadastrar</button>
+                <button className='form__button-submit' type='submit'>Cadastrar</button>
             </form>
         </div>
     )

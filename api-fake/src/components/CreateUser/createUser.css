@@ -27,7 +27,7 @@
     gap: 5px;
 }
 
-.form__button{
+.form__button-submit{
     background-color: #fff;
     padding: .5rem 1rem;
     border-radius: 15px;
